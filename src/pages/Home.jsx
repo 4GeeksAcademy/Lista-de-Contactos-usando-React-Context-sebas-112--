@@ -26,7 +26,7 @@ export const Home = () => {
 	// Eliminar contacto con confirmación
 	function deleteContact(id) {
 		if (window.confirm("¿Estás seguro de eliminar este contacto?")) {
-			fetch(`${urlApi}/contact/${id}`, {
+			fetch(`${urlApi}/contact/agendas/Sebastian/contacts/${id}`, {
 				method: "DELETE"
 			})
 				.then((res) => {

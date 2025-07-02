@@ -5,7 +5,7 @@ const CreateContact = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    full_name: "",
+    name: "",
     email: "",
     agenda_slug: "Sebastian",
     address: "",
@@ -49,8 +49,8 @@ const CreateContact = () => {
           <input
             type="text"
             className="form-control"
-            name="full_name"
-            value={formData.full_name}
+            name="name"
+            value={formData.name}
             onChange={handleChange}
             placeholder="Full Name"
             required
